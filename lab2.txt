@@ -1,0 +1,28 @@
+The project is complete with no bugs from what I can see.
+
+//lab2.php
+This is a simple login file for normal users that allows them to login into an existing account or register. 
+
+//db_connect.php
+The script that connects to the database. The default XAMPP settings for localhost and phpMyAdmin were used. 
+
+//register.php
+Stores new user information and inserts into users table. For simple validation, ignores slashes,escape characters, special characters from username and password string inputs.
+Rejects registration with exisitng usernames and prevents duplication of admin user info. 
+
+//welcome.php
+Sends user to a welcome page with a welcome message followed by their username upon successful login. Allows users toggle background color to blue, ability to logout while redirecting them back to lab2(login) page.
+
+//admin.php
+This is a form similar to lab2.php that allows only an admin user to login. I manually added this user on mysql database. 
+For my project, the admin credentials are userId='1', username='admin', password='1234'. It sends them to the special welcome page that displays users table.
+
+//welcomeAdmin.php
+Similar to welcome.php but is only accessible to admin user only. Welcomes that user with a welcome message and displays table along with user ids, usernames, passwords. The table is ordered by username. 
+Ability to toggle background color to blue and logout back to lab2.php.
+
+//lab2.sql
+Contains a sql dump of the lab2 database and the users table.
+
+//Extra credit
+I made an attempt with hashing the passwords using md5 to create random unique hashes. 
